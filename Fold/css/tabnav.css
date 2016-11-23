@@ -1,0 +1,74 @@
+/* 
+Smashing jQuery Tab Styles
+Author: Jake Rutter
+*/
+
+/* ---------- YUI Reset ---------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+.container5 {
+	width: 300px;
+	margin: 0px auto;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+p {margin: 0px;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+
+/* Navigation - Tabs */
+
+ul#tabs5 {
+	list-style-type: none;
+	position: relative;
+}
+
+ul#tabs5 li {
+	float: left;
+	width: 90px;
+	text-align: center;
+	position: relative;
+	margin: 0 3px;
+	position:relative
+}
+
+ul#tabs5 li a.tab-active {
+	color: #333;
+	background: #999;
+	position: relative;
+	top: 1px;
+}
+
+ul#tabs5 li a {
+	border-top: 1px solid #9B4C24;
+	border-left: 1px solid #9B4C24;
+	border-right: 1px solid #9B4C24;
+	background: #333;;
+	padding: 10px 5px 10px 10px;	
+	display: block;
+	text-decoration: none;
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #fff;
+	position: relative;
+}
+
+.tab5-content {
+	border: 1px solid #333;
+	background: #fff;
+}
+
+.tab5 {
+	display: none;
+}

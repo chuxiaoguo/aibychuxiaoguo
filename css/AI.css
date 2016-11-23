@@ -1,0 +1,31 @@
+html, body {
+	margin:0;
+	font-family: 'Titillium Web', sans-serif;
+	
+	font-size:14px;
+	font-weight:300;
+	background-image:url(../ddc095bfdae234448832fa67490a12e5.jpg);
+	
+	
+	.home-section {
+	padding:0 0 20px 0;
+	margin:250px 0 180px 0;
+	width:100%;
+	text-align:center;
+	overflow:hidden;
+}
+.home-section h1 {
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	font-family: 'Titillium Web', sans-serif;
+	font-size:90px;
+	color:#734BA9;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+.home-section p {
+	font-size:35px;
+	margin-bottom:20px;
+}
+}

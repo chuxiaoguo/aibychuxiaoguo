@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>PhotoFolio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<link href="css/datouwang.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-photostack.js"></script>
+<script type="text/javascript" src="scripts/jquery-coin-slider.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.12.custom.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#portfolioslider').coinslider({
+        width: 480,
+        height: 280,
+        navigation: false,
+        links: false,
+        hoverPause: true
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+ <link href="css/dropdownv1.css" rel="stylesheet" type="text/css" media="all"/>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function(){
+$('ul#nav li').hover(function(){
+$(this).find('.subnav').slideDown('slow');
+$(this).closest('a').addClass('active');
+},function(){
+$(this).find('.subnav').slideUp('fast');
+$(this).find('a').removeClass('active');
+});
+});
+$(document).ready(function(){
+var path=location.pathname;
+var pathArray=path.split('/');
+console.log(pathArray);
+var pArrLength=pathArray.length;
+console.log(pArrLength);
+for(i=0;i<pArrLength;i++){
+$("a[href*='"+pathArray[i]+"']").addClass("selected");
+}
+});
+
+
+</script>
+</head>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1><a href="index.html">致敬答案</a></h1>
+      <p>Allen Averson</p>
+    </div>
+    <div class="fl_right"><a href="#"><img src="images/toubu1.png" alt="" /></a></div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+ 
+<div class="container2">
+ <ul id="nav">
+      <li><a href="index.html">主页</a></li>
+      <li><a href="style-demo.html">生涯数据</a></li>
+      <li><a href="#">一生荣誉</a></li>
+      <li><a href="#">NBA名人堂</a>
+        <ul  class="subnav">
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">CodeIgniter</a></li>
+          <li><a href="#">JQuery</a></li>
+        </ul>
+    
+      </li>
+      <li><a href="portfolio.html">图片展览</a></li>
+      <li class="last"><a href="#">视频收藏</a></li>
+      <div id="lavalamp"></div>
+  <form action="#" method="post" id="search">
+    <fieldset>
+        <legend>Site Search</legend>
+        <input type="text" value="Search Our Website&hellip;" onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+        <input type="image" id="go" src="images/search.gif" alt="Search" />
+      </fieldset>
+    </form>
+  	</ul>
+ 
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="featured_slide">
+    <!-- ####################################################################################################### -->
+    <div id="slider">
+      <ul id="categories" name="categories">
+        <li class="category">
+          <h2>76人时期</h2>
+          <a href="index.html"><img src="images/slide/76人.jpg" alt="" /></a>
+          <p>1996年的选秀大会上，艾弗森被费城76人队以第一轮第一顺位选中，成为了NBA史上最矮的选秀状元并与球队签下了3年900万美元的合同。在为新秀的艾弗森在处子秀上便独得了30分...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>掘金时期</h2>
+          <a href="#"><img src="images/slide/掘金.jpg" alt="" /></a>
+          <p>2006年12月20日，艾弗森被交换到丹佛掘金队与当家球星卡梅隆·安东尼结为黄金双枪。2006-2007赛季，艾弗森的到来并没有给掘金带来实质的帮助。他特立独行的打法无法将整支球队捏合起来...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>活塞时期</h2>
+          <a href="#"><img src="images/slide/活塞.jpg" alt="" /></a>
+          <p>2008年11月，艾弗森被交易到活塞队，表现抢眼，并打败了开赛连续11场不败的湖人队。该赛季常规赛末段，由于不满活塞主教练迈克尔·科里将其贬为替补的决定，艾弗森与球队决裂...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>灰熊时期</h2>
+          <a href="#"><img src="images/slide/灰熊.jpg" alt="" /></a>
+          <p>2009年9月9日，艾弗森接受了孟菲斯灰熊队提出的1年350万美元的报价，孟菲斯成为艾弗森职业生涯的第四站。该赛季截止到11月8日艾弗森总共为灰熊打了三场比赛，球队在这三场比赛里全部...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>重回费城</h2>
+          <a href="#"><img src="images/slide/重回费城.jpg" alt="" /></a>
+          <p>2009年12月3日，艾弗森宣布与费城76人队签约一年非保障合同与安德烈·伊戈达拉共同冲击季后赛，答案再次回到赛场。重披费城3号。泪洒新闻
+发布会现场。2009年12月7日，76人主场迎战掘金...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>欧洲之旅</h2>
+          <a href="#"><img src="images/slide/欧洲.jpg" alt="" /></a>
+          <p>2010年10月25日，艾弗森同意以400万美元的身价为土耳其贝斯科塔斯篮球俱乐部效力两年。[11]  在2010-11赛季，在征战欧洲杯时，艾弗森出场7次，总共上场67分钟，总共得到了28分和9个篮板...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        <li class="category">
+          <h2>宣布退役</h2>
+          <a href="#"><img src="images/slide/退役.jpg" alt="" /></a>
+          <p>2013年10月30日，阿伦-艾弗森在费城正式宣布退役。2014年3月1日，艾弗森3号球衣在76人主场对奇才的中场休息时退役。2015年7月22日，阿伦·艾弗森当选由BET电台和NBA球员工会联合举办的...</p>
+          <p class="readmore"><a href="#">更 多 &raquo;</a></p>
+        </li>
+        
+      </ul>
+      <a class="prev disabled"></a> <a class="next disabled"></a>
+      <div style="clear:both"></div>
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="container" class="clear">
+    <!-- ####################################################################################################### -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#img1 img').bind({
+mouseenter:function(){
+var toolTip =$(this).attr("title");
+$('#img1').after('<p class="toolTip">'+toolTip+'</p>').slideDown();
+},
+mouseleave:function(){
+$('p.toolTip').hide();
+}
+});
+});
+</script>
+ <script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#img3 img').bind({
+mouseenter:function(){
+var toolTip =$(this).attr("title");
+$('#img3').after('<p class="toolTip">'+toolTip+'</p>').slideDown();
+},
+mouseleave:function(){
+$('p.toolTip').hide();
+}
+});
+});
+</script>
+ <script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$('#img2 img').bind({
+mouseenter:function(){
+var toolTip =$(this).attr("title");
+$('#img2').after('<p class="toolTip">'+toolTip+'</p>').slideDown();
+},
+mouseleave:function(){
+$('p.toolTip').hide();
+}
+});
+});
+</script>
+    
+    
+    <div id="tabcontainer">
+      <ul id="tabnav">
+        <li><a href="#tabs-1">聚焦2001</a></li>
+        <li><a href="#tabs-2">代言品牌</a></li>
+        <li><a href="#tabs-3">高光时刻</a></li>
+        <li><a href="#tabs-4">众星评语</a></li>
+        <li><a href="#tabs-5">感动事迹</a></li>
+      </ul>
+      <div id="tabs-1" class="tabcontainer">
+        <div id="hpage_services" class="clear">
+          <div class="block"><img src="images/2001/01-1.png" alt="" /><strong>76人3：1淘汰步行者</strong>
+            <p>人民网北京4月22日讯 今天步行者客场上演大逆转，在上半场结束的时候，76人领先步行者16分，最多时候76人领先18分，当所有人都认为下半场是垃圾时间的时候，步行者却在最后奇迹般的将比分...</p>
+          </div>
+          <div class="block"><img src="images/2001/01-2.png" alt="" /><strong>76人4：3淘汰猛龙</strong>
+            <p> 艾弗森看样子不需要别人的任何帮助了，今天他率领76人在主场以97：92战胜对手，从而使大比分变为1：1。艾弗森本人创造了他在季后赛中的最高分54分，这个得分也是76人球队历史上最高...</p>
+          </div>
+          <div class="block last"><img src="images/2001/01-3.png" alt="" /><strong> 76人4：3淘汰雄鹿 </strong>
+            <p>2000-2001赛季NBA季后赛东部联盟决赛北京时间5月23日开赛，费城76人队和密尔沃基雄鹿队进行了双方第一场较量，结果76人队在主场第一联合中心体育场以93比85击败雄鹿队，在季后赛7...</p>
+          </div>
+          <div class="spacer">&nbsp;</div>
+          <div class="block"><img src="images/2001/01-4.png" alt="" /><strong> 艾弗森单骑闯关</strong>
+            <p>本场比赛湖人队的“大鲨鱼”奥尼尔得到44分和20个篮板球，里克·福克斯得到19分，科比·布莱恩特得到15分。76人队中，本赛季常规赛MVP艾伦·埃弗森再显英雄本色，全场得到48分、5个篮板球、6次...</p>
+          </div>
+          <div class="block"><img src="images/2001/01-4.png" alt="" /><strong>总决赛再生悬念</strong>
+            <p>尽管双方也曾交替领先１０次，但洛杉矶湖人队终于在今晚第二个主场控制了节奏，如愿地以９８：８９战胜费城７６人队，从而以１比１的总积分移师客场。这使ＮＢＡ七局四胜制的总决赛重新产生悬念...</p>
+          </div>
+          <div class="block last"><img src="images/2001/01-4.png" alt="" /><strong>湖人蝉联总冠军</strong>
+            <p>全场比赛，艾弗森拿到了两队的最高分37分，奥尼尔拿下了29分、13个篮板，科比拿下了26分、12个篮板，还有全队最高的6次助攻。这是湖人队主帅菲尔·杰克逊作为主教练拿下的第8个总冠军 ...</p>
+          </div>
+        </div>
+      </div>
+      <!-- ########### -->
+      <div id="tabs-2" class="tabcontainer">
+        <h2 class="title">艾弗森代言过得品牌</h2>
+        <ul class="line clear">
+          <li>
+            <div id="img1" class="imgholder"><a href="#"><img src="images/brand/adidas.jpg" title="广告语：1.adidas is all in(全倾全力)2.“没有不可能”(Impossible is nothing)" alt="" /></a></div>
+            <p class="name">阿迪达斯</p>
+            <p class="readmore"><a href="#">View This Project &raquo;</a></p>
+          </li>
+          <li>
+            <div id="img2" class="imgholder"><a href="#"><img src="images/brand/nikes.jpg" title="广告语：1.(if you really want it you'll push back pain)只要心够决  就能征服痛苦"  alt="" /></a></div>
+            <p class="name">耐克</p>
+            <p class="readmore"><a href="#">View This Project &raquo;</a></p>
+          </li>
+          <li class="last">
+            <div id="img3" class="imgholder"><a href="#"><img src="images/brand/rebu.jpg" title="广告语：(discver you potential,design your future)发现你的潜力，设计你的未来" alt="" /></a></div>
+            <p class="name">锐步</p>
+            <p class="readmore"><a href="#">View This Project &raquo;</a></p>
+          </li>
+        </ul>
+      </div>
+      <!-- ########### -->
+      <div id="tabs-3" class="tabcontainer">
+        <div id="hpage_portfolio" class="clear">
+          <div class="fl_left">
+            <div id="portfolioslider">
+            
+	 <ul>
+                <li><img src="images/demo/portfolioslider/19202432.jpg" alt="" /></li>
+                <li><img src="images/demo/portfolioslider/1264040732712_1264032050340_41350.jpg" alt="" /></li>
+                <li><img src="images/demo/portfolioslider/137825677459480.jpg" alt="" /></li>
+                <li><img src="images/demo/portfolioslider/p2_b.jpg" alt="" /></li>
+                <li><img src="images/demo/portfolioslider/p3_b.jpg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+          <div class="fl_right">
+            <h2>一个超越时代的传递</h2>
+            <p>艾蜜们追捧偶像，还因艾弗森的不服输个性，在篮球场上体现为“挑衅”前辈，两度单挑“飞人”乔丹就是最好的例子。1997年3月12日在和公牛队的比赛中，艾弗森通过两个相似的变向运球，晃过当时不可一世的篮球之神——迈克尔·乔丹后跳投命中。在那个资讯传播还不发达的年代，那场比赛的录像以及那段精彩的视频，依旧传遍欧美、甚至亚洲等地。</p>
+            <p class="readmore"><a href="#">View The Full Project &raquo;</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- ########### -->
+      <div id="tabs-4" class="tabcontainer">
+      <h2>伟人评语：</h2>
+       <table id="tb" summary="Summary Here" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>评语</th>
+            <th>球星</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="light">
+            <td>他是那种会让我愿意花钱买票看他打球的年轻人</td>
+            <td>史蒂芬·库里</td>
+            
+          </tr>
+          <tr class="dark">
+           <td>身为NBA球员，应该要建立起如同艾弗森一般的自信</td>
+            <td>迈克尔·乔丹</td>
+            
+          </tr>
+          <tr class="light">
+            <td>对我而言，守艾弗森的确是一项艰苦的挑战，他的速度实在是太快了！</td>
+            <td>斯科蒂·皮蓬</td>
+            
+          </tr>
+          <tr class="dark">
+           <td>充满天赋与才气的艾弗森显然更有挑战性，如果你听到观众席上发出赞叹声与惊讶声，那肯定是艾弗森又做出什么样的高难度动做了</td>
+            <td>魔术师·约翰逊</td>
+           
+             </tr>
+             <tr class="light">
+            <td>或许他真的走步了，但我一点儿也不在乎，看他运球，就像是鉴赏一件艺术品。真的让人陶醉</td>
+            <td>菲尔·杰克逊</td>
+           
+          </tr>
+           <tr class="dark">
+           <td>答案&ldquo;是&ldquo;不可思议的天才球员</td>
+            <td>加内特</td>
+           
+             </tr>
+             <tr class="light">
+            <td>他就像一个小号版本的我——勇往直前,所向披靡,而且从不抱怨</td>
+            <td>奥尼尔</td>
+           
+          </tr>
+         
+        </tbody>
+      </table>
+      <script type="text/javascript">
+ var obj=document.getElementById("tb");
+ for(var i=0;i<obj.rows.length;i++){  //循环表格行设置鼠标事件：丁学 http://www.cnblogs.com/dingxue
+   obj.rows[i].onmouseover=function(){this.style.background="#333";}
+   obj.rows[i].onmouseout=function(){this.style.background="";}
+ }
+</script>
+        
+      </div>
+      <!-- ########### -->
+      <div id="tabs-5" class="tabcontainer">
+        <div id="content">
+          <h1>艾弗森感人聆听动作</h1>
+          <img class="imgr" src="images/demo/20100731100105-488459178.jpg" alt="" width="125" height="125" />
+          <p>小艾最经典的动作就是他在比赛胜利后都会去聆听观众们的欢呼声。</p>
+          <p>另一个典动作就是他投罚球时，会以一种似乎祈祷的形式把额头贴近球。</p>
+          <img class="imgl" src="images/demo/20100731100142-1716258707.jpg" alt="" width="125" height="125" />
+          <p>最后一个经典动作，也是在罚球时。在每次罚球过后，总会先后抬起双脚，分别用左右手触摸鞋跟处。 　　最感人的一个经典动作，是小艾转会到掘金后第一次客场对战76人。最后掘金还是以两分败给了76人，但感人的镜头是小艾竟跑到76人主场中心，亲吻了76人的地板。
+</p>
+          <p>
+另外艾弗森感人的事迹有很多，但是最另我感动的还是在　2010年年初， 艾弗森因小女儿患怪病，高烧不退，缺阵了全明星和比赛，艾弗森为了照顾女儿，与76人解除了本赛季剩余合约。</p>
+        </div>
+        <div id="column">
+          <div id="featured">
+            <ul>
+              <li>
+                <h2>2001年总决赛憾负湖人</h2>
+                <p class="imgholder"><img src="images/demo/9654469_550x550_0.jpg" alt="" /></p>
+                <p>小艾最经典的动作就是01NBA总决赛从泰鲁-龙身上跨过 让其忍受胯下之辱</p><p>
+小艾最感人的动作就是今年重回76人队 首场比赛入场后跪下亲吻地板 催人泪下</p><p>
+小艾的感人事迹太多了 但对他来说最重要的是01年的常规赛MVP 这是他辉煌一生的证名 </p><p>
+但对于我来说，小艾每一次摔倒后顽强的爬起来就是感动 每一次用他那瘦小的身体冲击着内线就使经典</p><p>
+那种顽强的斗志就是他的标志
+</p>
+                <p class="readmore"><a href="#">阅读更多 &raquo;</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <!-- ########### -->
+    </div>
+    <!-- ####################################################################################################### -->
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer" class="clear">
+    <div class="footbox">
+      <h2>关于我们</h2>
+      <p>班级：计科2班</p>
+      <p>学号：13190050</p>
+      <p>姓名：郑楚国</p>
+    </div>
+    <div class="footbox">
+      <h2>友情链接</h2>
+      <ul>
+        新浪体育
+        <li><a href="#"></a></li>
+        <li>腾讯体育</li>
+        <li>雅虎体育</li>
+      </ul>
+    </div>
+    <div class="footbox last">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><strong class="title">Tel:</strong><br />
+          xxxxx xxxxxxxxxx</li>
+        <li><strong class="title">Email:</strong><br />
+          <a href="#">contact@mydomain.com</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+<div class="wrapper" text-align="center">
+  <div id="copyright" class="clear" align="center">
+    <p  class="fl_left" >Copyright &copy; 2015 - All Rights Reserved - <a href="#">MNS丶NO3</a></p>
+  </div>
+</div>
+</body>
+</html>
